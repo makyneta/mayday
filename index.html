@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Metadados -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/styles/home.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet"/>
+  <!-- Scripts -->
+  <script src="assets/scripts/home.js" defer></script>
+  <!-- Título -->
+  <link rel="icon" type="image/jpg" href="assets/images/favicon.jpg" />
+  <title>MAYDAY — Band</title>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#sobre"    onclick="closeMobile()">Sobre</a>
+  <a href="#releases" onclick="closeMobile()">Releases</a>
+  <a href="#shows"    onclick="closeMobile()">Shows</a>
+  <a href="#videos"   onclick="closeMobile()">Vídeos</a>
+  <a href="#galeria"  onclick="closeMobile()">Galeria</a>
+  <a href="#contact"  onclick="closeMobile()">Contacto</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <a href="#hero" class="logo-link">
+    <img src="assets/images/logo/white.png" class="logo-img" alt="MAYDAY">
+  </a>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#releases">Releases</a>
+    <a href="#shows">Shows</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-noise"></div>
+  <div class="hero-line"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Pop Group · São Paulo · Since 2023</div>
+    <h1 class="hero-title">MAY<span>DAY</span></h1>
+    <p class="hero-sub">Talento, criatividade e uma presença cativante. Um som envolvente que conecta diferentes públicos.</p>
+    <div class="hero-cta">
+      <a href="#releases" class="btn btn-primary">Ouça Agora</a>
+      <a href="#shows" class="btn btn-outline">Próximos Shows</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="section-label fade-in">Quem Somos</div>
+  <h2 class="section-title fade-in">Sobre o MAYDAY</h2>
+  <div class="sobre-grid">
+
+    <!-- Foto da banda: substitui src pelo caminho real -->
+    <div class="sobre-visual fade-in">
+      <img src="assets/images/band/group.jpg" alt="MAYDAY — Foto da Banda">
+    </div>
+
+    <div class="sobre-text fade-in">
+      <p>Formado em São Paulo em 2023, o MAYDAY é um grupo pop que combina talento, criatividade e uma presença cativante. Composto por Yago Tiger, Leo LR, SHIN e Nickz, o grupo vem ganhando destaque desde suas primeiras apresentações, carregando uma energia única que conecta diferentes públicos.</p>
+      <p>Autêntico e dedicado, o MAYDAY transforma cada trabalho em uma expressão de suas ideias e vivências, criando um som que é, ao mesmo tempo, envolvente e impactante.</p>
+      <div class="sobre-members">
+        <span class="member-tag">Yago Tiger</span>
+        <span class="member-tag">Leo LR</span>
+        <span class="member-tag">SHIN</span>
+        <span class="member-tag">Nickz</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RELEASES / DISCOGRAFIA -->
+<section id="releases">
+  <div class="section-label fade-in">Lançamentos</div>
+  <h2 class="section-title fade-in">Discografia</h2>
+  <div class="releases-grid fade-in">
+
+    <div class="release-card">
+      <img src="assets/images/releases/excesso.jpg" alt="excessO">
+      <div class="release-bottom">
+        <div class="release-date">2025</div>
+        <div class="release-name">excessO</div>
+        <div class="release-type">Single</div>
+      </div>
+    </div>
+
+    <div class="release-card">
+      <img src="assets/images/releases/silencio-gun-e.jpg" alt="Silêncio Gun-E Version">
+      <div class="release-bottom">
+        <div class="release-date">2025</div>
+        <div class="release-name">Silêncio (Gun-E Version)</div>
+        <div class="release-type">Single</div>
+      </div>
+    </div>
+
+    <div class="release-card">
+      <img src="assets/images/releases/silencio.jpg" alt="Silêncio">
+      <div class="release-bottom">
+        <div class="release-date">2025</div>
+        <div class="release-name">Silencio</div>
+        <div class="release-type">Single</div>
+      </div>
+    </div>
+
+    <div class="release-card">
+      <img src="assets/images/releases/ciclo-armadilha.jpg" alt="Ciclo Armadilha">
+      <div class="release-bottom">
+        <div class="release-date">2024</div>
+        <div class="release-name">Ciclo: Armadilha</div>
+        <div class="release-type">EP</div>
+      </div>
+    </div>
+
+    <div class="release-card">
+      <img src="assets/images/releases/noite-neon.jpg" alt="Noite Neon">
+      <div class="release-bottom">
+        <div class="release-date">2024</div>
+        <div class="release-name">Noite Neon</div>
+        <div class="release-type">Single</div>
+      </div>
+    </div>
+
+    <div class="release-card">
+      <img src="assets/images/releases/armadilha.jpg" alt="Armadilha">
+      <div class="release-bottom">
+        <div class="release-date">2024</div>
+        <div class="release-name">Armadilha</div>
+        <div class="release-type">Single</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SHOWS -->
+<section id="shows">
+  <div class="section-label fade-in">Ao Vivo</div>
+  <h2 class="section-title fade-in">Shows</h2>
+
+  <div class="shows-empty fade-in">
+    <div class="shows-empty-icon">◈</div>
+    <div class="shows-empty-title">Nenhum show marcado</div>
+    <div class="shows-empty-sub">Ainda não há datas confirmadas, mas há muito por vir. Fique atento.</div>
+    <div class="shows-empty-pulse">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!--
+  Quando tiver shows, remove .shows-empty e descomenta abaixo:
+  <div class="shows-list">
+    <div class="show-item">
+      <div><div class="show-date">15</div><span class="show-date-month">Mar 2026</span></div>
+      <div class="show-info"><div class="show-venue">Nome do Local</div><div class="show-location">Cidade, País</div></div>
+      <div class="show-action"><a href="#" class="show-ticket">Ingressos</a></div>
+    </div>
+  </div>
+  -->
+</section>
+
+<!-- VIDEOCLIPES -->
+<section id="videos">
+  <div class="section-label fade-in">Audiovisual</div>
+  <h2 class="section-title fade-in">Videoclipes</h2>
+  <div class="videos-grid fade-in">
+
+    <!-- Videoclipe_excessO -->
+    <div class="video-card" onclick="window.open('https://www.youtube.com/watch?v=YzAWAG4Fjxk','_blank')">
+      <img src="assets/images/releases/mv/excesso.jpg" alt="Excesso — Videoclipe">
+      <span class="video-badge">Music Video</span>
+      <div class="video-play-overlay">
+        <div class="video-play">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+      <div class="video-overlay">
+        <div class="video-title">Excesso</div>
+        <!-- <div class="video-meta">Videoclipe Oficial · 2025</div> -->
+      </div>
+    </div>
+
+    <!-- Videoclipe_Silêncio-GunE -->
+    <div class="video-card" onclick="window.open('https://www.youtube.com/watch?v=XdUrHT5BZDc','_blank')">
+      <img src="assets/images/releases/mv/silencio-gune.jpg" alt="Silêncio — Gun-E Video">
+      <span class="video-badge">Lyric Video</span>
+      <div class="video-play-overlay">
+        <div class="video-play">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+      <div class="video-overlay">
+        <div class="video-title">Silêncio (Gun-E Version)</div>
+        <!-- <div class="video-meta">Videoclipe Oficial · 2025</div> -->
+      </div>
+    </div>
+
+    <!-- Videoclipe_Silêncio -->
+    <div class="video-card" onclick="window.open('https://www.youtube.com/watch?v=XdUrHT5BZDc','_blank')">
+      <img src="assets/images/releases/mv/silencio.jpg" alt="Silêncio — Videoclipe">
+      <span class="video-badge">Music Video</span>
+      <div class="video-play-overlay">
+        <div class="video-play">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+      <div class="video-overlay">
+        <div class="video-title">Silêncio</div>
+        <!-- <div class="video-meta">Videoclipe Oficial · 2025</div> -->
+      </div>
+    </div>
+
+    <!-- Video_MAYDAYTV01 -->
+    <div class="video-card" onclick="window.open('https://www.youtube.com/watch?v=XdUrHT5BZDc','_blank')">
+      <img src="assets/images/videos/maydaytv-1.jpg" alt="Bastidores do Chawon Fest — MAYDAY TV">
+      <span class="video-badge">MAYDAY TV</span>
+      <div class="video-play-overlay">
+        <div class="video-play">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+      <div class="video-overlay">
+        <div class="video-title">Bastidores do Chawon Fest</div>
+        <!-- <div class="video-meta">Videoclipe Oficial · 2025</div> -->
+      </div>
+    </div>
+
+    <!-- Videoclipe_MatchPerfeito -->
+    <div class="video-card" onclick="window.open('https://www.youtube.com/watch?v=RZUdm3PMYy8','_blank')">
+      <img src="assets/images/releases/mv/match-perfeito.jpg" alt="Match Perfeito — Videoclipe">
+      <span class="video-badge">Music Video</span>
+      <div class="video-play-overlay">
+        <div class="video-play">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+      <div class="video-overlay">
+        <div class="video-title">Match Perfeito</div>
+        <!-- <div class="video-meta">Videoclipe Oficial · 2025</div> -->
+      </div>
+    </div>
+
+    <!-- Videoclipe_NoiteNeon -->
+    <div class="video-card" onclick="window.open('https://www.youtube.com/watch?v=VKG-c9OemQQ','_blank')">
+      <img src="assets/images/releases/mv/noite-neon.jpg" alt="Noite Neon — Videoclipe">
+      <span class="video-badge">Music Video</span>
+      <div class="video-play-overlay">
+        <div class="video-play">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+      <div class="video-overlay">
+        <div class="video-title">Noite Neon</div>
+        <!-- <div class="video-meta">Videoclipe Oficial · 2025</div> -->
+      </div>
+    </div>
+
+    <!-- Videoclipe_Armadilha -->
+    <div class="video-card" onclick="window.open('https://www.youtube.com/watch?v=MG_YyZapAak','_blank')">
+      <img src="assets/images/releases/mv/armadilha.jpg" alt="Armadilha — Videoclipe">
+      <span class="video-badge">Music Video</span>
+      <div class="video-play-overlay">
+        <div class="video-play">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+      <div class="video-overlay">
+        <div class="video-title">Armadilha</div>
+        <!-- <div class="video-meta">Videoclipe Oficial · 2025</div> -->
+      </div>
+    </div>
+
+    <!-- Videoclipe_Armadilha -->
+    <div class="video-card" onclick="window.open('https://www.youtube.com/watch?v=RGvwcCMsszY','_blank')">
+      <img src="assets/images/releases/mv/armadilha-dancemv.jpg" alt="Armadilha — Dance Video">
+      <span class="video-badge">Dance Video</span>
+      <div class="video-play-overlay">
+        <div class="video-play">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+      <div class="video-overlay">
+        <div class="video-title">Armadilha (Dance Video)</div>
+        <!-- <div class="video-meta">Videoclipe Oficial · 2025</div> -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria">
+  <div class="section-label fade-in">Fotos & Visual</div>
+  <h2 class="section-title fade-in">Galeria</h2>
+  <div class="gallery-grid fade-in">
+
+    <!-- 8 fotos: substitui cada src -->
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="assets/images/band/horizontal-group.jpg" alt="MAYDAY — Group">
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="assets/images/band/shin_leo.png" alt="MAYDAY — Shin & Leo">
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="assets/images/band/yago_nickz.png" alt="MAYDAY — Yago & Nickz">
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="assets/images/band/vertical-group-2.jpg" alt="MAYDAY — Group">
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" onclick="closeLightbox()">×</span>
+  <!-- A imagem abre em proporção original, sem zoom -->
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+</div>
+
+<!-- CONTACTO -->
+<section id="contact">
+  <div class="section-label fade-in">Fale Conosco</div>
+  <h2 class="section-title fade-in">Contato</h2>
+  <div class="contact-grid fade-in">
+    <div class="contact-text">
+      <p>Para booking, imprensa, parcerias ou qualquer outra questão, entre em contato pelos nossos canais ou preencha o formulário.</p>
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <div class="contact-info-label">E-mail</div>
+          <div class="contact-info-value"><a href="mailto:contato@maydaygrupo.com.br">contato@maydaygrupo.com.br</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-label">E-mail</div>
+          <div class="contact-info-value"><a href="mailto:contato.maydaygrupo@gmail.com">contato.maydaygrupo@gmail.com</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-label">Instagram</div>
+          <div class="contact-info-value"><a href="https://instagram.com/mayday.grupo" target="_blank">@mayday.grupo</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form" action="https://formspree.io/f/xvgbagja" method="POST">
+      <div class="form-group">
+        <label>Nome</label>
+        <input type="text" placeholder="Seu nome"/>
+      </div>
+      <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" placeholder="email@exemplo.com"/>
+      </div>
+      <div class="form-group">
+        <label>Assunto</label>
+        <select>
+          <option value="">Selecione o assunto</option>
+          <option>Booking / Shows</option>
+          <option>Imprensa / Media</option>
+          <option>Parcerias</option>
+          <option>Outro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Mensagem</label>
+        <textarea placeholder="Escreva sua mensagem..."></textarea>
+      </div>
+      <div style="margin-top:2rem">
+        <button class="btn btn-primary" type="button">Enviar Mensagem</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-agency">
+    <strong>Makyneta Unipessoal, Lda.</strong>
+  </div>
+  <div class="footer-copy">
+    © <span id="year"></span> Todos os direitos reservados.
+  </div>
+</footer>
+</body>
+</html>
