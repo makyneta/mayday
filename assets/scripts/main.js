@@ -4,6 +4,12 @@
 
 (async () => {
 
+  // ── Fix base for localhost ──
+  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+    const base = document.querySelector('base');
+    if (base) base.href = './';
+  }
+
   // ── Load partials ──
   const headerEl = document.querySelector('[data-include="header"]');
   const footerEl = document.querySelector('[data-include="footer"]');
