@@ -9,11 +9,11 @@
   const footerEl = document.querySelector('[data-include="footer"]');
 
   if (headerEl) {
-    const r = await fetch('/partials/header.html');
+    const r = await fetch('/mayday/partials/header.html');
     headerEl.outerHTML = await r.text();
   }
   if (footerEl) {
-    const r = await fetch('/partials/footer.html');
+    const r = await fetch('/mayday/partials/footer.html');
     footerEl.outerHTML = await r.text();
   }
 
