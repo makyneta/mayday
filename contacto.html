@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <script>
+    (function(){
+      var b = document.createElement("base");
+      if (location.hostname.includes("github.io")) {
+        b.href = "/mayday/";
+      } else {
+        var s = location.pathname.replace(/^\//, "").split("/");
+        var depth = s.length > 1 && s[s.length - 1].includes(".") ? s.length - 1 : s.length;
+        b.href = depth > 0 ? "../".repeat(depth) : "./";
+      }
+      document.head.prepend(b);
+    })();
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Contacto — MAYDAY. Booking, imprensa e parcerias." />

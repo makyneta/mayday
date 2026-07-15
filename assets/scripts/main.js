@@ -4,17 +4,6 @@
 
 (async () => {
 
-  // ── Add base tag ──
-  const base = document.createElement('base');
-  if (location.hostname.includes('github.io')) {
-    base.href = '/mayday/';
-  } else {
-    const segs = location.pathname.replace(/^\//, '').split('/');
-    const depth = segs.length > 1 && segs[segs.length - 1].includes('.') ? segs.length - 1 : segs.length;
-    base.href = depth > 0 ? '../'.repeat(depth) : './';
-  }
-  document.head.prepend(base);
-
   // ── Load partials ──
   const headerEl = document.querySelector('[data-include="header"]');
   const footerEl = document.querySelector('[data-include="footer"]');
