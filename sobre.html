@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sobre o MAYDAY — Grupo pop de São Paulo." />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/styles/main.css" />
+  <script src="/assets/scripts/main.js" defer></script>
+  <title>Sobre — MAYDAY</title>
+</head>
+<body>
+
+<div data-include="header"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="w">
+    <h1 class="page-hero__ttl fi">Sobre<br />o <span style="color: var(--accent)">MAYDAY</span></h1>
+    <p class="page-hero__sub fi fi-d1">Conheça a história, os membros e a energia por trás do grupo.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec">
+  <div class="w">
+    <div class="about-grid">
+      <div class="about-img fi">
+        <img src="/assets/images/band/group.webp" alt="MAYDAY" />
+      </div>
+      <div class="about-text fi fi-d1">
+        <p>Formado em São Paulo em 2023, o MAYDAY é um grupo pop que combina talento, criatividade e uma presença cativante. Composto por Yago Tiger, Leo LR, SHIN e Nickz, o grupo vem ganhando destaque desde suas primeiras apresentações.</p>
+        <p>Autêntico e dedicado, o MAYDAY transforma cada trabalho em uma expressão de suas ideias e vivências, criando um som que é, ao mesmo tempo, envolvente e impactante.</p>
+        <p>Carregando uma energia única que conecta diferentes públicos, o grupo se consolidou como uma das promessas mais vibrantes da cena pop brasileira.</p>
+        <div class="members">
+          <span class="member fi">Yago Tiger</span>
+          <span class="member fi fi-d1">Leo LR</span>
+          <span class="member fi fi-d2">SHIN</span>
+          <span class="member fi fi-d3">Nickz</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section class="sec" style="background: var(--bg-2)">
+  <div class="w w--narrow">
+    <div class="lbl fi">A Jornada</div>
+    <h2 class="ttl fi">Nossa História</h2>
+    <div class="fi">
+      <p style="font-size: 0.95rem; color: var(--text-dim); line-height: 2.1; margin-bottom: 1.5rem;">
+        Tudo começou em São Paulo, quando quatro jovens com o mesmo sonho se encontraram. A química foi instantânea — cada um trouxe sua individualidade para criar algo maior do que a soma das partes.
+      </p>
+      <p style="font-size: 0.95rem; color: var(--text-dim); line-height: 2.1; margin-bottom: 1.5rem;">
+        Desde os primeiros shows em casas de cultura até os lançamentos que conquistaram milhares de ouvintes, o MAYDAY sempre priorizou a autenticidade e a conexão real com o público.
+      </p>
+      <p style="font-size: 0.95rem; color: var(--text-dim); line-height: 2.1;">
+        Com uma discografia que já inclui singles e um EP, o grupo continua expandindo seus horizontes musicais, misturando pop com elementos de rock, trap e R&B — sempre com a assinatura inconfundível do MAYDAY.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOTOS -->
+<section class="sec">
+  <div class="w">
+    <div class="lbl fi">Fotos</div>
+    <h2 class="ttl fi">Galeria da Banda</h2>
+    <div class="gal-grid fi">
+      <div class="gal-item" onclick="openLightbox(this)">
+        <img src="/assets/images/band/horizontal-group.webp" alt="MAYDAY" />
+      </div>
+      <div class="gal-item" onclick="openLightbox(this)">
+        <img src="/assets/images/band/shin_leo.webp" alt="SHIN & Leo" />
+      </div>
+      <div class="gal-item" onclick="openLightbox(this)">
+        <img src="/assets/images/band/yago_nickz.webp" alt="Yago & Nickz" />
+      </div>
+      <div class="gal-item" onclick="openLightbox(this)">
+        <img src="/assets/images/band/vertical-group-2.webp" alt="MAYDAY" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lightbox">
+  <button class="lb__close" onclick="closeLightbox()" aria-label="Fechar">&times;</button>
+  <img class="lb__img" id="lb-img" src="" alt="" />
+</div>
+
+<div data-include="footer"></div>
+
+</body>
+</html>

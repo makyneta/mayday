@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galeria — MAYDAY. Fotos oficiais da banda." />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/assets/styles/main.css" />
+  <script src="/assets/scripts/main.js" defer></script>
+  <title>Galeria — MAYDAY</title>
+</head>
+<body>
+
+<div data-include="header"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="w">
+    <h1 class="page-hero__ttl fi">Galeria</h1>
+    <p class="page-hero__sub fi fi-d1">Fotos oficiais, bastidores e momentos do MAYDAY.</p>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="sec">
+  <div class="w">
+    <div class="gal-grid fi">
+      <div class="gal-item" onclick="openLightbox(this)">
+        <img src="/assets/images/band/group.webp" alt="MAYDAY — Group" />
+      </div>
+      <div class="gal-item" onclick="openLightbox(this)">
+        <img src="/assets/images/band/horizontal-group.webp" alt="MAYDAY — Horizontal" />
+      </div>
+      <div class="gal-item" onclick="openLightbox(this)">
+        <img src="/assets/images/band/shin_leo.webp" alt="SHIN & Leo" />
+      </div>
+      <div class="gal-item" onclick="openLightbox(this)">
+        <img src="/assets/images/band/yago_nickz.webp" alt="Yago & Nickz" />
+      </div>
+      <div class="gal-item" onclick="openLightbox(this)">
+        <img src="/assets/images/band/vertical-group.webp" alt="MAYDAY — Vertical" />
+      </div>
+      <div class="gal-item" onclick="openLightbox(this)">
+        <img src="/assets/images/band/vertical-group-2.webp" alt="MAYDAY — Vertical 2" />
+      </div>
+      <div class="gal-item" onclick="openLightbox(this)">
+        <img src="/assets/images/band/nickz-v.webp" alt="Nickz" />
+      </div>
+      <div class="gal-item" onclick="openLightbox(this)">
+        <img src="/assets/images/band/MAYDAY ALT.webp" alt="MAYDAY — Alt" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lightbox">
+  <button class="lb__close" onclick="closeLightbox()" aria-label="Fechar">&times;</button>
+  <img class="lb__img" id="lb-img" src="" alt="" />
+</div>
+
+<div data-include="footer"></div>
+
+</body>
+</html>
