@@ -4,10 +4,11 @@
 
 (async () => {
 
-  // ── Fix base for localhost ──
-  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
-    const base = document.querySelector('base');
-    if (base) base.href = './';
+  // ── Add base tag for GitHub Pages ──
+  if (location.hostname.includes('github.io')) {
+    const base = document.createElement('base');
+    base.href = '/mayday/';
+    document.head.prepend(base);
   }
 
   // ── Load partials ──
