@@ -4,12 +4,16 @@
 
 (async () => {
 
-  // ── Add base tag for GitHub Pages ──
+  // ── Add base tag ──
+  const base = document.createElement('base');
   if (location.hostname.includes('github.io')) {
-    const base = document.createElement('base');
     base.href = '/mayday/';
-    document.head.prepend(base);
+  } else {
+    const segs = location.pathname.replace(/^\//, '').split('/');
+    const depth = segs.length > 1 && segs[segs.length - 1].includes('.') ? segs.length - 1 : segs.length;
+    base.href = depth > 0 ? '../'.repeat(depth) : './';
   }
+  document.head.prepend(base);
 
   // ── Load partials ──
   const headerEl = document.querySelector('[data-include="header"]');
