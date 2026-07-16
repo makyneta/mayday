@@ -500,7 +500,7 @@ button { font-family: inherit; }
   color: var(--text-muted); transition: all 0.3s;
 }
 .ftr__socials a:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
-.ftr__socials svg { width: 15px; height: 15px; }
+.ftr__socials i { font-size: 15px; }
 .ftr__copy {
   font-size: 0.6rem; color: var(--text-muted); letter-spacing: 0.1em;
 }
@@ -519,6 +519,19 @@ button { font-family: inherit; }
 .page-hero__sub {
   font-size: 0.9rem; color: var(--text-dim); margin-top: 1.5rem;
   max-width: 500px; line-height: 1.8;
+}
+
+/* ── Stream Row ── */
+.stream-row {
+  display: flex; justify-content: center; align-items: center; gap: 2rem;
+  padding: 0 2rem; max-width: 700px; margin: 0 auto 1rem;
+}
+.stream-row__icon {
+  font-size: 1.8rem; color: var(--text-dim);
+  transition: color 0.25s, transform 0.25s;
+}
+.stream-row__icon:hover {
+  color: var(--accent); transform: translateY(-2px);
 }
 
 /* ── Responsive ── */
