@@ -546,6 +546,7 @@ button { font-family: inherit; }
   .w { padding: 0 1.2rem; }
   .hdr { padding: 1rem 1.2rem; }
   .hero { min-height: 100svh; }
+  .hero__bg { background-image: url('../images/5b514791-176e-4645-9387-338ebc177d30.jpeg') !important; }
   .hero__title { font-size: clamp(2.5rem, 13vw, 4rem); }
   .hero__sub { font-size: 0.85rem; }
   .hero__content { padding: 0 1.2rem 2.5rem; }
